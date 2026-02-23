@@ -3,9 +3,9 @@
 </template>
 
 <script setup lang="ts">
-import { ref } from 'vue'
+import { ref } from 'vue';
 
-const footer = ref<string>('Footer')
+const footer = ref<string>('Текстиль');
 </script>
 
 <style scoped>
