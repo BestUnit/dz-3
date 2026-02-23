@@ -2,7 +2,7 @@
   <div class="user-root">
     <slot name="prepend" />
     <div class="name">{{ product?.name }}</div>
-    <div class="price">Цена: {{ product?.price }}</div>
+    <div class="price">Цена: {{ product?.price }} р.</div>
     <img :src="product?.img" alt="avatar" class="avatar" />
     <slot name="append" />
   </div>
