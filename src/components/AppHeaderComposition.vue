@@ -1,9 +1,7 @@
 <template>
   <header :class="theme">
-    <div class="btn-container">
-      <button @click="toggleTheme">Dark/White</button>
-    </div>
-    <h1>{{ title }}</h1>
+    <h1 class="text">{{ title }}</h1>
+    <button @click="toggleTheme">Dark/White</button>
   </header>
 </template>
 
@@ -39,18 +37,19 @@ const toggleTheme = () => {
   color: #ffffff;
 }
 header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-right: 40px;
+}
+
+.text {
+  flex-grow: 1;
   text-align: center;
 }
 
 h1 {
   font-size: 48px;
-}
-
-.btn-container {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  padding: 25px;
 }
 
 button {
